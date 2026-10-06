@@ -1,0 +1,3 @@
+# Paradise Nursery Shopping Application
+
+A React and Redux based online plant shopping application...
