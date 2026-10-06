@@ -1,0 +1,164 @@
+/* =========================================
+   Paradise Nursery - Application Styles
+   ========================================= */
+
+/* Main application container */
+.App {
+  min-height: 100vh;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f3d2b;
+}
+
+/* =========================================
+   Paradise Nursery Landing Page
+   ========================================= */
+
+.landing-page {
+  min-height: 100vh;
+  width: 100%;
+
+  /* Background image for Paradise Nursery landing page */
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.35)
+    ),
+    url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1920&q=80");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+/* Content displayed over the landing-page background */
+.landing-content {
+  text-align: center;
+  max-width: 750px;
+  padding: 50px 30px;
+  color: white;
+}
+
+/* Company name */
+.landing-content h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Company description */
+.landing-content p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* Get Started button */
+.get-started-btn {
+  display: inline-block;
+  padding: 14px 32px;
+
+  background-color: #2e7d32;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 1.05rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #1b5e20;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   About Us
+   ========================================= */
+
+.about-us {
+  min-height: 100vh;
+  padding: 70px 20px;
+  background-color: #f4f8f3;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-container h1 {
+  font-size: 2.5rem;
+  color: #245c35;
+  margin-bottom: 25px;
+}
+
+.about-container h2 {
+  color: #2e7d32;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.about-container p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+.about-container ul {
+  padding-left: 25px;
+}
+
+.about-container li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* =========================================
+   Responsive Design
+   ========================================= */
+
+@media (max-width: 768px) {
+  .landing-content {
+    padding: 35px 20px;
+  }
+
+  .landing-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .landing-content p {
+    font-size: 1.05rem;
+  }
+
+  .get-started-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .landing-content p {
+    font-size: 0.95rem;
+  }
+}
